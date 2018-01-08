@@ -36,6 +36,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
@@ -43,12 +44,14 @@
         android:text="TextView"
         android:textColor="@android:color/white"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         tools:text="Desired League" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -62,7 +65,11 @@
             android:id="@+id/toggleButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ToggleButton"
+            android:background="@drawable/league_toggle"
+            android:text="Mens"
+            android:textColor="@android:color/white"
+            android:textOff="Mens"
+            android:textOn="Mens"
             tools:layout_editor_absoluteX="151dp"
             tools:layout_editor_absoluteY="216dp" />
 
@@ -70,15 +77,39 @@
             android:id="@+id/toggleButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ToggleButton"
+            android:background="@drawable/league_toggle"
+            android:text="Mens"
+            android:textColor="@android:color/white"
+            android:textOff="Womens"
+            android:textOn="Womens"
             tools:layout_marginTop="16dp" />
 
         <ToggleButton
             android:id="@+id/toggleButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ToggleButton"
+            android:background="@drawable/league_toggle"
+            android:text="Co-Ed"
+            android:textColor="@android:color/white"
+            android:textOff="Co-Ed"
+            android:textOn="Co-Ed"
             tools:layout_marginTop="16dp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/swoosh_button"
+        android:fontFamily="cursive"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
