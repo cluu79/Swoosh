@@ -42,7 +42,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:fontFamily="montserrat"
+        android:fontFamily="monospace"
         android:text="@string/desired_league"
         android:textColor="@android:color/white"
         android:textSize="24sp"
@@ -86,7 +86,7 @@
             android:textColor="@android:color/white"
             android:textOff="@string/Womens"
             android:textOn="@string/Womens"
-            tools:layout_marginTop="16dp" />
+            tools:layout_marginTop="25dp" />
 
         <ToggleButton
             android:id="@+id/toggleButton3"
@@ -97,7 +97,7 @@
             android:textColor="@android:color/white"
             android:textOff="@string/co_ed"
             android:textOn="@string/co_ed"
-            tools:layout_marginTop="16dp" />
+            tools:layout_marginTop="25dp" />
     </LinearLayout>
 
     <Button
