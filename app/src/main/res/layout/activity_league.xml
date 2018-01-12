@@ -50,13 +50,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.22000003"
         tools:text="Desired League" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="204dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:orientation="vertical"
@@ -66,10 +67,11 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/mensLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/league_toggle"
+            android:onClick="onMensClicked"
             android:text="@string/mens"
             android:textColor="@android:color/white"
             android:textOff="@string/mens"
@@ -78,26 +80,28 @@
             tools:layout_editor_absoluteY="216dp" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/womensLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/league_toggle"
+            android:onClick="onWomensClicked"
             android:text="@string/Womens"
             android:textColor="@android:color/white"
             android:textOff="@string/Womens"
             android:textOn="@string/Womens"
-            tools:layout_marginTop="25dp" />
+            tools:layout_marginTop="35dp" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/coedLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/league_toggle"
+            android:onClick="onCoedClicked"
             android:text="@string/co_ed"
             android:textColor="@android:color/white"
             android:textOff="@string/co_ed"
             android:textOn="@string/co_ed"
-            tools:layout_marginTop="25dp" />
+            tools:layout_marginTop="35dp" />
     </LinearLayout>
 
     <Button
