@@ -1,6 +1,5 @@
-package com.example.semidevil.swoosh
+package com.example.semidevil.swoosh.Controller
 
-import android.content.res.Configuration
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log

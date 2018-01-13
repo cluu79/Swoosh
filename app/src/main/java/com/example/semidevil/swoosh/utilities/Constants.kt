@@ -1,4 +1,4 @@
-package com.example.semidevil.swoosh
+package com.example.semidevil.swoosh.utilities
 
 /**
  * Created by SemiDevil on 1/11/2018.
