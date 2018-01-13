@@ -8,6 +8,6 @@ class FinishActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_finish2)
+        setContentView(R.layout.activity_finish)
     }
 }
